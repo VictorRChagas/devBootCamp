@@ -8,7 +8,7 @@ public class Carro {
     private String chassi;
     private Propietario proprietario;
     private Double velocidadeMaxima;
-    private Double velocidadeAtual;
+    private Double velocidadeAtual = 0D;
     private Integer numeroMarchas;
     private Double quantidadeCombustivel;
     private Integer marchaAtual = 0;
@@ -98,10 +98,10 @@ public class Carro {
     }
 
     public void acelerar(){
-        if (velocidadeAtual<velocidadeMaxima){
-            this.velocidadeAtual+= 1;
+            velocidadeAtual+= 1;
+            System.out.println("Velocidade Atual: " + velocidadeAtual);
             System.out.println("Acelerando! ");
-        }else{
+        if (velocidadeAtual==velocidadeMaxima){
             velocidadeAtual = velocidadeMaxima;
             System.out.println("Atingiu velocidade máxima! ");
         }

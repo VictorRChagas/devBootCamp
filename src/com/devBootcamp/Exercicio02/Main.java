@@ -30,6 +30,7 @@ public class Main {
         endereco.dadosEndereco();
 
         System.out.println("A autonomia do carro na viagem é de: " + carro.getAutonomiaViagem(10.0) + "Km's");
+        carro.acelerar();
 
     }
 }
