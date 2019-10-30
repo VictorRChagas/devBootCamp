@@ -13,6 +13,7 @@ public class Main {
         NotaFiscalItem notaFiscalItem = new NotaFiscalItem(1, notaFiscal, lampada, 2, 5.0);
         notaFiscal.addItem(notaFiscalItem);
 
+
         notaFiscal.resumoNota();
 
     }

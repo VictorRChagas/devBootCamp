@@ -23,8 +23,8 @@ public class NotaFiscalItem {
         return notaFiscal;
     }
 
-    public String getProduto() {
-        return produto.getDescricao();
+    public Produto getProduto() {
+        return produto;
     }
 
     public int getQuantidade() {
@@ -39,6 +39,5 @@ public class NotaFiscalItem {
         double valorTotal = getValorUnitario() * getQuantidade();
         return valorTotal;
     }
-
 
 }

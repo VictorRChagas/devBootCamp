@@ -9,10 +9,10 @@ public class NotaFiscal {
     private int id;
     private int numeroNota;
     private Cliente cliente;
-    //private NotaFiscalItem notaFiscalItens;
     private Enderecos enderecoEntrega;
     private double valorTotal;
     private List<NotaFiscalItem> listNotaFIscalItem = new ArrayList<>();
+
 
     public NotaFiscal(int id, int numeroNota, Cliente cliente, double valorTotal) {
         this.id = id;
@@ -58,12 +58,11 @@ public class NotaFiscal {
         System.out.println("----------------------------");
         System.out.println("Lista itens: ");
         for (NotaFiscalItem notaFiscalItem : listNotaFIscalItem) {
-            System.out.println("Produto: " + notaFiscalItem.getProduto());
+            System.out.println("Produto: " + notaFiscalItem.getProduto().getDescricao());
             System.out.println("Quantidade: " + notaFiscalItem.getQuantidade());
             System.out.println("Valor unitario: " + notaFiscalItem.getValorUnitario());
             System.out.println("Valor total: " + notaFiscalItem.getValorTotal());
         }
-
     }
 
 }
