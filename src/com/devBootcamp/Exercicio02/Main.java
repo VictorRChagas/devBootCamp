@@ -32,8 +32,11 @@ public class Main {
         System.out.println("A autonomia do carro na viagem é de: " + carro.getAutonomiaViagem(10.0) + "Km's");
         carro.acelerar();
         carro.trocarMarcha();
+        carro.trocarMarcha();
+        carro.reduzirMarcha();
         carro.frear();
         carro.marchaRe();
+
 
     }
 }

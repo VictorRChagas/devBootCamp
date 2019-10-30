@@ -101,24 +101,29 @@ public class Carro {
             velocidadeAtual+= 1;
             System.out.println("Velocidade Atual: " + velocidadeAtual);
             System.out.println("Acelerando! ");
+            System.out.println();
         if (velocidadeAtual==velocidadeMaxima){
             velocidadeAtual = velocidadeMaxima;
             System.out.println("Atingiu velocidade máxima! ");
+            System.out.println();
         }
     }
 
     public void frear(){
         this.velocidadeAtual = 0D;
         System.out.println("O freio foi acionado");
+        System.out.println();
     }
 
     public void trocarMarcha(){
         if (marchaAtual < numeroMarchas){
             marchaAtual++;
             System.out.println("Aumentando a marcha! ");
+            System.out.println();
         }else if(marchaAtual == numeroMarchas){
             marchaAtual = numeroMarchas;
             System.out.println("Marcha maxima! ");
+            System.out.println();
         }
     }
 
@@ -126,18 +131,22 @@ public class Carro {
         if (marchaAtual >= 0 && marchaAtual <=numeroMarchas){
             marchaAtual--;
             System.out.println("Reduzindo Marcha! ");
+            System.out.println();
         }
 
         if (marchaAtual == 0){
             System.out.println("Ponto neutro! ");
+            System.out.println();
         }
     }
 
     public void marchaRe(){
         if(velocidadeAtual == 0){
             System.out.println("Marcha ré");
+            System.out.println();
         }else{
             System.out.println("O carro precisa está na marcha 0 para dar ré! ");
+            System.out.println();
         }
     }
 
