@@ -19,15 +19,15 @@ public class Main {
         pessoa.dadosPessoa();
 
         Pessoa Maicon = new Pessoa();
-        pessoa.setNome("Maicon");
-        pessoa.setSobrenome("Chaique");
-        pessoa.setCPF(88888888);
-        pessoa.setEmail("maicon@gmail.com");
+        Maicon.setNome("Maicon");
+        Maicon.setSobrenome("Chaique");
+        Maicon.setCPF(88888888);
+        Maicon.setEmail("maicon@gmail.com");
 
-        pessoa.adicionarEnderecos("Rua Guarani", 500,"Fraron");
-        pessoa.adicionarEnderecos("Avenida Tupi", 285,"Industrial");
-        pessoa.adicionarTelefones("888888",TipoTelefone.CELULAR);
+        Maicon.adicionarEnderecos("Rua Guarani", 500,"Fraron");
+        Maicon.adicionarEnderecos("Avenida Tupi", 285,"Industrial");
+        Maicon.adicionarTelefones("888888",TipoTelefone.CELULAR);
 
-        pessoa.dadosPessoa();
+        Maicon.dadosPessoa();
     }
 }
