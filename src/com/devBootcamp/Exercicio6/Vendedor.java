@@ -1,7 +1,6 @@
 package com.devBootcamp.Exercicio6;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 public class Vendedor extends Empregado {
     protected BigDecimal valorProdutosVendidos;
