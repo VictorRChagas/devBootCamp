@@ -81,7 +81,7 @@ public class Voo {
     }
 
     public void dadosVoo(){
-        System.out.println("Mês do vôo: " + this.getData().getDayOfMonth() + "/" + this.getData().getMonth() + "/" + this.getData().getYear() );
+        System.out.println("Dia do vôo: " + this.getData().getDayOfMonth() + "/" + this.getData().getMonthValue() + "/" + this.getData().getYear() );
         System.out.println("Hora do vôo: " + this.getData().getHour() + ":" + this.getData().getMinute());
         System.out.println("Numero Vôo: " + this.getVoo());
     }
