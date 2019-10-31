@@ -16,6 +16,9 @@ public class Main {
         voo.verificaAcento(5);
         System.out.println("Proximo acento livre: " + voo.proximoAcentoLivre(7));
 
+        System.out.println("Mês do vôo: " + voo.getData().getDayOfMonth() + "/" + voo.getData().getMonth() + "/" + voo.getData().getYear() );
+        System.out.println("Hora do vôo: " + voo.getData().getHour() + ":" + voo.getData().getMinute());
+
 
     }
 }
