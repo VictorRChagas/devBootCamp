@@ -8,6 +8,5 @@ public class Main {
         elevador.descer();
         elevador.descer();
         elevador.subir();
-
     }
 }
