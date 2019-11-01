@@ -14,10 +14,11 @@ public class Main {
         animais.add(jacare);
 
         ContabilizarEspecies contabilizarEspecies = new ContabilizarEspecies();
-        Resultados = contabilizarEspecies.contabilizarEspecies(animais, new FiltraEspecie());
+        List<Resultado> Resultados = contabilizarEspecies.contabilizarEspecies(animais, new FiltraEspecie());
 
-        for (Animal resultado : Resultados) {
-
+        for (Resultado resultado : Resultados) {
+            System.out.println(resultado.getNomeAnimal());
+            System.out.println(resultado.getEspecie());
         }
 
     }
