@@ -1,6 +1,5 @@
 package com.devBootcamp.Exercicio8;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -10,18 +9,7 @@ public class Main {
         Triangulo triangulo = new Triangulo(5D);
         Circulo circulo = new Circulo(5D);
 
-        System.out.println("Area quadrado: " + quadrado.getArea());
-        System.out.println("Area retangulo: " + retangulo.getArea());
-        System.out.println("Area triangulo: " + triangulo.getArea());
-        System.out.println("Area circulo: " + circulo.getArea());
-        System.out.println("**********************");
-        System.out.println();
-
-        List<Figura> figuras = new ArrayList<>();
-        figuras.add(quadrado);
-        figuras.add(retangulo);
-        figuras.add(triangulo);
-        figuras.add(circulo);
+        List<Figura> figuras = List.of(quadrado,retangulo,triangulo,circulo);
 
         FiguraGeometrica figuraGeometrica = new FiguraGeometrica();
         //Retornando a lista inteira
