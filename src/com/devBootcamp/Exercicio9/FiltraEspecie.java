@@ -10,7 +10,7 @@ public class FiltraEspecie implements EspeciesUtil {
     public List<Animal> filtraEspecie(List<Animal> animais, EspecieAnimal especieFiltrar) {
         List<Animal> especiesFiltradas = new ArrayList<>();
         for (Animal animalFiltrado : animais) {
-            if (animalFiltrado.getEspecie() == Animais.getEspecie()){
+            if (animalFiltrado.getEspecie().equals(especieFiltrar)){
                 especiesFiltradas.add(animalFiltrado);
             }
         }

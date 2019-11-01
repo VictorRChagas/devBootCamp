@@ -1,10 +1,10 @@
 package com.devBootcamp.Exercicio9;
 
-public class Cachorro extends Animais implements Animal{
+public class Cachorro implements Animal{
 
     @Override
     public EspecieAnimal getEspecie() {
-        return null;
+        return EspecieAnimal.MAMIFEROS;
     }
 
     @Override

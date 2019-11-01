@@ -1,17 +1,15 @@
 package com.devBootcamp.Exercicio9;
 
 
-public class Animais implements Animal {
-    private String nomeAnimal;
-    private EspecieAnimal especie;
+class Gato implements Animal {
 
     @Override
     public EspecieAnimal getEspecie() {
-        return especie;
+        return EspecieAnimal.MAMIFEROS;
     }
 
     @Override
     public String getNomeAnimal() {
-        return nomeAnimal;
+        return "Gato";
     }
 }

@@ -1,14 +1,14 @@
 package com.devBootcamp.Exercicio9;
 
-public class Jacare extends Animais implements Animal {
+public class Jacare implements Animal {
 
     @Override
     public EspecieAnimal getEspecie() {
-        return null;
+        return EspecieAnimal.REPTEIS;
     }
 
     @Override
     public String getNomeAnimal() {
-        return null;
+        return "Jacare";
     }
 }

@@ -5,22 +5,24 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Animal cachorro = new Cachorro("Cachorro", EspecieAnimal.MAMIFEROS);
-        Animal jacare = new Jacare("Jacare", EspecieAnimal.REPTEIS);
+        Animal cachorro = new Cachorro();
+        Animal jacare = new Jacare();
 
         FiltraEspecie filtraEspecie = new FiltraEspecie();
         List<Animal> animais = new ArrayList<>();
         animais.add(cachorro);
         animais.add(jacare);
 
-        filtraEspecie.filtraEspecie(animais, EspecieAnimal.MAMIFEROS);
         List<EspecieAnimal> list = filtraEspecie.classificaEspecies(animais);
 
-        ContabilizarEspecie contabilizarEspecie = new ContabilizarEspecie();
-        contabilizarEspecie.contabilizarEspecies(animais, );
+        Resultado resultado = new Resultado(EspecieAnimal.AVES,20);
 
-
-
+        filtraEspecie.filtraEspecie(animais, EspecieAnimal.MAMIFEROS);
+        List<EspecieAnimal> listClassificado = filtraEspecie.classificaEspecies(animais);
+        for (EspecieAnimal especieAnimal : listClassificado) {
+            System.out.println(especieAnimal);
+        }
+        System.out.println(filtraEspecie.classificaEspecies(animais));
 
     }
 }
