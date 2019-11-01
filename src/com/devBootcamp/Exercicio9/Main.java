@@ -13,16 +13,12 @@ public class Main {
         animais.add(cachorro);
         animais.add(jacare);
 
-        List<EspecieAnimal> list = filtraEspecie.classificaEspecies(animais);
+        ContabilizarEspecies contabilizarEspecies = new ContabilizarEspecies();
+        Resultados = contabilizarEspecies.contabilizarEspecies(animais, new FiltraEspecie());
 
-        Resultado resultado = new Resultado(EspecieAnimal.AVES,20);
+        for (Animal resultado : Resultados) {
 
-        filtraEspecie.filtraEspecie(animais, EspecieAnimal.MAMIFEROS);
-        List<EspecieAnimal> listClassificado = filtraEspecie.classificaEspecies(animais);
-        for (EspecieAnimal especieAnimal : listClassificado) {
-            System.out.println(especieAnimal);
         }
-        System.out.println(filtraEspecie.classificaEspecies(animais));
 
     }
 }
