@@ -10,7 +10,6 @@ public class FiguraGeometrica {
     public FiguraGeometrica(){}
 
     public FiguraGeometrica(Figura figura) {
-        this.area = area;
         calcularArea(figura);
     }
 

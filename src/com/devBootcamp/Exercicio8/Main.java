@@ -4,10 +4,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Quadrado quadrado = new Quadrado(5D);
-        Retangulo retangulo = new Retangulo(5D,10D);
-        Triangulo triangulo = new Triangulo(5D);
-        Circulo circulo = new Circulo(5D);
+        Figura quadrado = new Quadrado(5D);
+        Figura retangulo = new Retangulo(5D,10D);
+        Figura triangulo = new Triangulo(5D);
+        Figura circulo = new Circulo(5D);
 
         List<Figura> figuras = List.of(quadrado,retangulo,triangulo,circulo);
 
