@@ -17,7 +17,7 @@ public class Main {
         List<Resultado> Resultados = contabilizarEspecies.contabilizarEspecies(animais, new FiltraEspecie());
 
         for (Resultado resultado : Resultados) {
-            System.out.println(resultado.getNomeAnimal());
+            System.out.println(resultado.getQuantidade());
             System.out.println(resultado.getEspecie());
         }
 
