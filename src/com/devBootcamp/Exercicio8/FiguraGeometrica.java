@@ -7,6 +7,13 @@ public class FiguraGeometrica {
 
     private Double area;
 
+    public FiguraGeometrica(){}
+
+    public FiguraGeometrica(Figura figura) {
+        this.area = area;
+        calcularArea(figura);
+    }
+
     public void calcularArea(List<Figura> figura){
         for (Figura figura1 : figura) {
             System.out.println("Area do " + figura1.getNome() + ": " + figura1.getArea());

@@ -11,7 +11,9 @@ public class Main {
 
         List<Figura> figuras = List.of(quadrado,retangulo,triangulo,circulo);
 
-        FiguraGeometrica figuraGeometrica = new FiguraGeometrica();
+        //Metodo que calcula direto do construtor, alterando apenas o parametro
+        FiguraGeometrica figuraGeometrica = new FiguraGeometrica(triangulo);
+
         //Retornando a lista inteira
         figuraGeometrica.calcularArea(figuras);
 
