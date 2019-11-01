@@ -24,6 +24,8 @@ public class Main {
         impostos.add(Ipi);
         impostos.add(Pis);
 
+        var totalImpostos = calcularoraImpostos.calcularImposto(impostos);
+
         System.out.println("Valor ICMS: " + valorICMS);
         System.out.println("Valor PIS: " + valorPis);
         System.out.println("Valor COFINS: " + valorCofins);
